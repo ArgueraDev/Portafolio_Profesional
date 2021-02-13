@@ -30,10 +30,10 @@ var appInicio = new Vue({
     English: {
       frase: 'If you can imagine it, you can program it, the only limit you have is the one you impose on yourself.',
       p1: 'Hello, my name is Roberto Carlos Arguera Campos, I am currently a student in systems engineering and computer networks of the faculty of science and technology at the University Gerardo Barrios, Campus Usulután, El Salvador.',
-      p2: 'Abilities',
+      p2: 'Skills',
       p3: 'I like to work in the area of software development, database and network management, I also like the area of electronics and mathematics, apart from that I can perform in the area of management, but this is not my forte; in my daily life I have other skills in the area of music and I am currently taking piano lessons and practice a variety of other instruments such as guitar, drums and trumpet.',
-      p4: 'Goal',
-      p5: 'My goal as a professional is to be of help to society by imparting the knowledge learned during the development of my life and at the same time work with the areas in which I like to perform.',
+      p4: 'Objective',
+      p5: 'My objective as a professional is to be of help to society by imparting the knowledge learned during the development of my life and at the same time work with the areas I like to work with.',
       p6: 'Contacts',
       m1: 'Home',
       m2: 'About Me',

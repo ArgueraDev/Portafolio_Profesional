@@ -20,24 +20,24 @@
         <nav class="white" role="navigation">
             <div class="nav-wrapper container">
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="../">Inicio</a></li>
-                    <li><a href="sobre-mi.html">Sobre Mí</a></li>
-                    <li><a href="#">Casos de Éxito</a></li>
+                    <li><a href="../">{{principal.m1}}</a></li>
+                    <li><a href="sobre-mi.html">{{principal.m2}}</a></li>
+                    <li><a href="#">{{principal.m3}}</a></li>
                     <li><a class='dropdown-trigger btn' href='' data-target='dropdown1'>Español</a></li>
                     <ul id='dropdown1' class='dropdown-content'>
-                        <li><a href="#!">Español</a></li>
-                        <li><a href="#!">English</a></li>
+                        <li><a v-on:click="IdiomaEspanol()" href="#!">Español</a></li>
+                        <li><a v-on:click="IdiomaEnglish()" href="#!">English</a></li>
                     </ul>
                 </ul>
 
                 <ul id="nav-mobile" class="sidenav">
-                    <li><a href="../">Inicio</a></li>
-                    <li><a href="sobre-mi.html">Sobre Mí</a></li>
-                    <li><a href="#">Casos de Éxito</a></li>
+                    <li><a href="../">{{principal.m1}}</a></li>
+                    <li><a href="sobre-mi.html">{{principal.m2}}</a></li>
+                    <li><a href="#">{{principal.m3}}</a></li>
                     <li><a class='dropdown-trigger btn' href='' data-target='dropdown2'>Español</a></li>
                     <ul id='dropdown2' class='dropdown-content'>
-                        <li><a href="#!">Español</a></li>
-                        <li><a href="#!">English</a></li>
+                        <li><a v-on:click="IdiomaEspanol()" href="#!">Español</a></li>
+                        <li><a v-on:click="IdiomaEnglish()" href="#!">English</a></li>
                     </ul>
                 </ul>
                 <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -47,12 +47,11 @@
         <div id="index-banner" class="parallax-container" style="background: rgba(255, 255, 255, 0.2);">
             <div class="section no-pad-bot">
                 <div class="container">
-                    <h1 class="header center light-text text-lighten-2">Mis Proyectos</h1>
+                    <h1 class="header center light-text text-lighten-2">{{principal.m5}}</h1>
                 </div>
             </div>
             <div class="parallax"><img src="../img/dev.png" alt="devs"></div>
         </div>
-
 
         <div class="container">
             <div class="section">
@@ -63,12 +62,11 @@
                                 <img src="../img/Finappza.png">
                             </div>
                             <div class="card-content">
-                                <span class="card-title">Web App Finappza</span>
-                                <p>la Web App Finappza es un sitio Web en el cual encontra informacion relacionada con
-                                    las finanzas y en el cual se pueden hacer aportes si se registra dentro de ella.</p>
+                                <span class="card-title">{{principal.p1}}</span>
+                                <p>{{principal.p2}}</p>
                             </div>
                             <div class="card-action">
-                                <a href="https://finappza-cb6d6.firebaseapp.com/">Enlace</a>
+                                <a href="https://finappza-cb6d6.firebaseapp.com/">{{principal.p3}}</a>
                             </div>
                         </div>
                     </div>
@@ -78,9 +76,8 @@
                                 <img src="../img/FinappzaM.png">
                             </div>
                             <div class="card-content">
-                                <span class="card-title">App Mobil Finappza</span>
-                                <p>Finappza es una Aplicacion mobil en la cual se encuentra informacion relacionada con
-                                    las finanzas y a la ves se pueden hacer aportes si se registra dentro de ella.</p>
+                                <span class="card-title">{{principal.p4}}</span>
+                                <p>{{principal.p5}}</p>
                             </div>
                         </div>
                     </div>
@@ -88,13 +85,10 @@
             </div>
         </div>
 
-        </div>
-        </div>
-
         <footer class="page-footer teal">
             <div class="container">
                 <div class="row">
-                    <h5>{{principal.p6}}</h5>
+                    <h5>{{principal.m4}}</h5>
                 </div>
                 <div class="row">
                     <div class="col l3 s12">

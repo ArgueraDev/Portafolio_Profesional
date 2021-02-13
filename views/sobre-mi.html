@@ -25,8 +25,8 @@
                     <li><a href="casos-de-exito.html">{{principal.m3}}</a></li>
                     <li><a class='dropdown-trigger btn' href='' data-target='dropdown1'>{{principal.id}}</a></li>
                     <ul id='dropdown1' class='dropdown-content'>
-                        <li><a href="#!">Español</a></li>
-                        <li><a href="#!">English</a></li>
+                        <li><a v-on:click="IdiomaEspanol()" href="#!">Español</a></li>
+                        <li><a v-on:click="IdiomaEnglish()" href="#!">English</a></li>
                     </ul>
                 </ul>
 
@@ -36,8 +36,8 @@
                     <li><a href="casos-de-exito.html">{{principal.m3}}</a></li>
                     <li><a class='dropdown-trigger btn' href='' data-target='dropdown2'>{{principal.id}}</a></li>
                     <ul id='dropdown2' class='dropdown-content'>
-                        <li><a href="#!">Español</a></li>
-                        <li><a href="#!">English</a></li>
+                        <li><a v-on:click="IdiomaEspanol()" href="#!">Español</a></li>
+                        <li><a v-on:click="IdiomaEnglish()" href="#!">English</a></li>
                     </ul>
                 </ul>
                 <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -67,36 +67,35 @@
                     </div>
                     <div class="col s12 m8">
                         <div class="icon-block">
-                            <h4 class="center">Datos Personales</h4>
-                            <h6><strong>Nombre:</strong> Roberto Carlos Arguera Campos</h6>
-                            <h6><strong>Lugar y Fecha de Nacimiento:</strong> 02 de Noviembre de 1998, Usulután, El
-                                Salvador
+                            <h4 class="center">{{principal.p1}}</h4>
+                            <h6><strong>{{principal.p2}}</strong> Roberto Carlos Arguera Campos</h6>
+                            <h6><strong>{{principal.p3}}</strong> {{principal.p31}}</h6>
+                            <h6><strong>{{principal.p4}}</strong> +503 7869-8340</h6>
+                            <h6><strong>{{principal.p5}}</strong> robertoarguera@gmail.com</h6>
+                            <h4 class="center">{{principal.p6}}</h4>
+                            <h6>2018 hasta la Fecha. <strong>{{principal.p7}}</strong>
+                                (Universidad Gerardo Barrios)</h6>
+                            <h6>2015 - 2017 <strong>{{principal.p8}}</strong> (Instituto Nacional de El
+                                Transito)</h6>
+                            <h4 class="center">{{principal.p9}}</h4>
+                            <h6>2017<strong> {{principal.p10}}</strong> (Banco de Fomento Agropecuario)</h6>
+                            <h4 class="center">{{principal.p11}}</h4>
+                            <h6>2017<strong> {{principal.p12}}</strong>
+                                (Universidad Gerardo Barrios)</h6>
+                            <h6>2019<strong> {{principal.p13}} RECITECNO</strong> (Universidad Gerardo Barrios)
                             </h6>
-                            <h6><strong>Teléfono:</strong> +503 7869-8340</h6>
-                            <h6><strong>Correo:</strong> robertoarguera@gmail.com</h6>
-                            <h4 class="center">Formación Académica</h4>
-                            <h6>2018 - 202x <strong>Ing. En Sistemas y Redes Informáticas</strong> (Universidad Gerardo
-                                Barrios - UGB)</h6>
-                            <h6>2015 - 2017 <strong>Tec. Administrativo Contable</strong> (Instituto Nacional de El
-                                Transito
-                                - INDET)</h6>
-                            <h4 class="center">Otros cursos</h4>
-                            <h6>2020<strong> Curso de Musica</strong></h6>
-                            <h6>2017<strong> Comunicaciones</strong> (Universidad Gerardo Barrios - UGB)</h6>
-                            <h4 class="center">Experiencia Profesional</h4>
-                            <h6>2017<strong> Servicio Social</strong> (Banco de Fomento Agropecuario - BFA)</h6>
-                            <h4 class="center">Informática </h4>
-                            <h6>Conocimientos en...</h6>
-                            <h6><strong>Mantenimiento de Equipos Informáticos</strong></h6>
-                            <h6><strong>Lenguajes de Programación</strong> (vb.net, C#, Java, JavaScript, PHP, XML,
-                                HTML)
+                            <h6>2019<strong> {{principal.p14}} FLIA {{principal.p15}</strong> (Universidad Gerardo Barrios)</h6>
+                            <h6>2019<strong> {{principal.p16}} CONINFO</strong> (ASPROC)</h6>
+                            <h6><strong>{{principal.p17}}</strong> {{principal.p171}}</h6>
+                            <h6><strong>{{principal.p18}}</strong></h6>
+                            <h4 class="center">{{principal.p19}}</h4>
+                            <h6>{{principal.p20}}</h6>
+                            <h6><strong>{{principal.p21}}</strong></h6>
+                            <h6><strong>{{principal.p22}}</strong> (vb.net, C#, Java, JavaScript, PHP)
                             </h6>
-                            <h6><strong>Manjeo de Bases de Datos</strong> (MySQL, Oracle, Postgre, MariaDB, SQLite)</h6>
-                            <h6><strong>Manejo de Microsoft Office</strong> (Word, Excel, Powerpoint)</h6>
-                            <h4 class="center">Otros Datos Interesantes</h4>
-                            <h6><strong>Conocimientos musicales</strong> (Guitarra, Bateria, Piano, Trompeta)</h6>
-                            <h6><strong>Conocimientos en Mantenimiento de instrumentos y equipos musicales</strong></h6>
-                            <h6><strong>Conocimientos en Manejo de Equipos de Sonido</strong></h6>
+                            <h6><strong>{{principal.p23}}</strong> (MySQL, SQL Server, Oracle, PostgreSQL,
+                                MariaDB, SQLite, MongoDB, CouchDB, Cassandra)</h6>
+                            <h6><strong>{{principal.p24}}</strong> (Word, Excel, Powerpoint)</h6>
                         </div>
                     </div>
                 </div>
@@ -107,7 +106,7 @@
         <footer class="page-footer teal">
             <div class="container">
                 <div class="row">
-                    <h5>{{principal.p6}}</h5>
+                    <h5>{{principal.m4}}</h5>
                 </div>
                 <div class="row">
                     <div class="col l3 s12">

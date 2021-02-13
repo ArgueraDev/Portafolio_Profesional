@@ -25,8 +25,8 @@
                     <li><a href="views/casos-de-exito.html">{{principal.m3}}</a></li>
                     <li><a class='dropdown-trigger btn' href='#' data-target='dropdown1'>{{principal.id}}</a></li>
                     <ul id='dropdown1' class='dropdown-content'>
-                        <li><a v-on:click="IdiomaEspanol" href="#!">Español</a></li>
-                        <li><a v-on:click="IdiomaEnglish" href="#!">English</a></li>
+                        <li><a v-on:click="IdiomaEspanol()" href="#!">Español</a></li>
+                        <li><a v-on:click="IdiomaEnglish()" href="#!">English</a></li>
                     </ul>
                 </ul>
 
@@ -36,8 +36,8 @@
                     <li><a href="views/casos-de-exito.html">{{principal.m3}}</a></li>
                     <li><a class='dropdown-trigger btn' href='#' data-target='dropdown2'>{{principal.id}}</a></li>
                     <ul id='dropdown2' class='dropdown-content'>
-                        <li><a href="#!">Español</a></li>
-                        <li><a href="#!">English</a></li>
+                        <li><a v-on:click="IdiomaEspanol()" href="#!">Español</a></li>
+                        <li><a v-on:click="IdiomaEnglish()" href="#!">English</a></li>
                     </ul>
                 </ul>
                 <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
