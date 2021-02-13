@@ -1,19 +1,7 @@
 var appInicio = new Vue({
   el: '#Inicio',
   data: {
-    principal: {
-      frase: 'Si lo puedes imaginar, lo puedes programar, el único limite que tienes es el que te impones.',
-      p1: '¡Hola!, Mi nombre es Roberto Carlos Arguera Campos, actualmente soy estudiante en ingeniería en sistemas y redes informáticas de la facultad de ciencia y tecnología en la Universidad Gerardo Barrios, Campus Usulután, El Salvador.',
-      p2: 'Habilidades',
-      p3: 'Me gusta desempeñar el área de desarrollo de software, manejo de bases de datos y redes, también me gusta el área de electrónica y matemáticas, aparte de eso puedo desempeñarme en el área de gestión, pero este no es mi fuerte; en mi vida cotidiana cuento con otras habilidades dentro del área de la música y actualmente estoy cursando clases de piano y practico otra variedad de instrumentos como lo es la guitarra, batería y trompeta.',
-      p4: 'Objetivo',
-      p5: 'Mi objetivo como profesional es ser de ayuda para la sociedad impartiendo los conocimientos aprendidos durante el desarrollo de mi vida y a la misma vez trabajar con las áreas con la que me gusta desempeñarme.',
-      p6: 'Contactos',
-      m1: 'Inicio',
-      m2: 'Sobre Mí',
-      m3: 'Casos de Éxito',
-      id: 'Español'
-    },
+    principal: {},
     Espanol: {
       frase: 'Si lo puedes imaginar, lo puedes programar, el único limite que tienes es el que te impones.',
       p1: '¡Hola!, Mi nombre es Roberto Carlos Arguera Campos, actualmente soy estudiante en ingeniería en sistemas y redes informáticas de la facultad de ciencia y tecnología en la Universidad Gerardo Barrios, Campus Usulután, El Salvador.',
@@ -44,9 +32,31 @@ var appInicio = new Vue({
   methods: {
     IdiomaEnglish: function () {
       this.principal = this.English;
+      document.cookie = "idioma=english";
     },
     IdiomaEspanol: function () {
       this.principal = this.Espanol;
+      document.cookie = "idioma=espanol";
     }
   }
+});
+
+$(document).ready(main);
+
+function main() {
+  if (exists == true) {
+    const valorIdioma = document.cookie.split('; ').find(row => row.startsWith('idioma=')).split('=')[1];
+    if (valorIdioma == "espanol") {
+      appInicio.principal = appInicio.Espanol;
+    } else {
+      appInicio.principal = appInicio.English;
+    }
+
+  } else {
+    document.cookie = "idioma=espanol";
+    appInicio.principal = appInicio.Espanol;
+  }
+};
+const exists = document.cookie.split(';').some(function (item) {
+  return item.trim().indexOf('idioma=') == 0;
 });
