@@ -182,90 +182,197 @@
     <!-- ======= proyectos ======= -->
     <section id="proyectos" class="portfolio-mf sect-pt4 route">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                My Projects
-              </h3>
-            </div>
-          </div>
+        <div class="row text-center">
+          <h3 class="title-a">
+            My Projects
+          </h3>
         </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/Finappza.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/Finappza.png" alt="" class="img-fluid">
-                </div>
-              </a>
+        <!-- ======= tabs ======= -->
+        <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="todo-tab" data-toggle="tab" href="#todos" role="tab" aria-controls="home"
+              aria-selected="true">Todo</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="web-tab" data-toggle="tab" href="#web" role="tab" aria-controls="profile"
+              aria-selected="false">Web</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="movil-tab" data-toggle="tab" href="#movil" role="tab" aria-controls="contact"
+              aria-selected="false">Móvil</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="todos" role="tabpanel" aria-labelledby="todo-tab">
+            <div class="row justify-content-center">
+              <div class="col-md-4">
+                <div class="work-box">
+                  <a href="assets/img/Finappza.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                    <div class="work-img">
+                      <img src="assets/img/Finappza.png" alt="" class="img-fluid">
+                    </div>
+                  </a>
 
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-10">
-                    <h2 class="w-title">Finappza Web App</h2>
-                    <p>The Finappza Web App is a site in which you will find financial basics, a loan installment
-                      calculator and if you register you can be part of the team and contribute loan installment
-                      calculator and if you register you can be part of the team and provide information within the
-                      information within Finappza which can be of help to other users.</p>
-                    <div class="w-more">
-                      <span class="w-ctegory">Creation</span> / <span class="w-date">2020</span>
+                  <div class="work-content">
+                    <div class="row">
+                      <div class="col-sm-10">
+                        <h2 class="w-title">Finappza Web App</h2>
+                        <p>The Finappza Web App is a site in which you will find financial basics, a loan installment
+                          calculator and if you register you can be part of the team and contribute loan installment
+                          calculator and if you register you can be part of the team and provide information within the
+                          information within Finappza which can be of help to other users.</p>
+                        <div class="w-more">
+                          <span class="w-ctegory">Creation</span> / <span class="w-date">2020</span>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="w-like">
+                          <a href="https://finappza-cb6d6.firebaseapp.com/"> <span class="bi bi-plus-circle"></span></a>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-sm-2">
-                    <div class="w-like">
-                      <a href="https://finappza-cb6d6.firebaseapp.com/"> <span class="bi bi-plus-circle"></span></a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="work-box">
+                  <a href="assets/img/FinappzaM.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                    <div class="work-img" style="height: 400px;">
+                      <img src="assets/img/FinappzaM.png" alt="" class="img-fluid">
+                    </div>
+                  </a>
+                  <div class="work-content">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <h2 class="w-title">Finappza Mobile App</h2>
+                        <p>Finappza is a mobile application with information on basic financial concepts and has a loan
+                          installment calculator. a loan installment calculator, it also has a section for users who
+                          register to share information within Finappza and to share information within Finappza that
+                          can be
+                          useful to other users. users.</p>
+                        <div class="w-more">
+                          <span class="w-ctegory">Creation</span> / <span class="w-date">2020</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="work-box">
+                  <a href="assets/img/Finappza.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                    <div class="work-img">
+                      <img src="assets/img/vids.PNG" alt="" class="img-fluid">
+                    </div>
+                  </a>
+                  <div class="work-content">
+                    <div class="row">
+                      <div class="col-sm-10">
+                        <h2 class="w-title">VIDS Web App</h2>
+                        <p>VIDS is a web application which contains information on the care and preservation of
+                          biodiversity. biodiversity, it has a list of some of the plant and animal species and some of
+                          the
+                          protected sites or green areas in El Salvador, showing the location of each one on the map.
+                          protected sites or green areas in El Salvador showing the location of each one on the map.</p>
+                        <div class="w-more">
+                          <span class="w-ctegory">Creation</span> / <span class="w-date">2021</span>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="w-like">
+                          <a href="https://vids-2021.herokuapp.com/"> <span class="bi bi-plus-circle"></span></a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/FinappzaM.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img" style="height: 400px;">
-                  <img src="assets/img/FinappzaM.png" alt="" class="img-fluid">
+          <div class="tab-pane fade" id="web" role="tabpanel" aria-labelledby="web-tab">
+            <div class="row justify-content-center">
+              <div class="col-md-4">
+                <div class="work-box">
+                  <a href="assets/img/Finappza.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                    <div class="work-img">
+                      <img src="assets/img/Finappza.png" alt="" class="img-fluid">
+                    </div>
+                  </a>
+
+                  <div class="work-content">
+                    <div class="row">
+                      <div class="col-sm-10">
+                        <h2 class="w-title">Finappza Web App</h2>
+                        <p>The Finappza Web App is a site in which you will find financial basics, a loan installment
+                          calculator and if you register you can be part of the team and contribute loan installment
+                          calculator and if you register you can be part of the team and provide information within the
+                          information within Finappza which can be of help to other users.</p>
+                        <div class="w-more">
+                          <span class="w-ctegory">Creation</span> / <span class="w-date">2020</span>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="w-like">
+                          <a href="https://finappza-cb6d6.firebaseapp.com/"> <span class="bi bi-plus-circle"></span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-12">
-                    <h2 class="w-title">Finappza Mobile App</h2>
-                    <p>Finappza is a mobile application with information on basic financial concepts and has a loan
-                      installment calculator. a loan installment calculator, it also has a section for users who
-                      register to share information within Finappza and to share information within Finappza that can be
-                      useful to other users. users.</p>
-                    <div class="w-more">
-                      <span class="w-ctegory">Creation</span> / <span class="w-date">2020</span>
+              </div>
+              <div class="col-md-4">
+                <div class="work-box">
+                  <a href="assets/img/Finappza.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                    <div class="work-img">
+                      <img src="assets/img/vids.PNG" alt="" class="img-fluid">
+                    </div>
+                  </a>
+                  <div class="work-content">
+                    <div class="row">
+                      <div class="col-sm-10">
+                        <h2 class="w-title">VIDS Web App</h2>
+                        <p>VIDS is a web application which contains information on the care and preservation of
+                          biodiversity. biodiversity, it has a list of some of the plant and animal species and some of
+                          the
+                          protected sites or green areas in El Salvador, showing the location of each one on the map.
+                          protected sites or green areas in El Salvador showing the location of each one on the map.</p>
+                        <div class="w-more">
+                          <span class="w-ctegory">Creation</span> / <span class="w-date">2021</span>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="w-like">
+                          <a href="https://vids-2021.herokuapp.com/"> <span class="bi bi-plus-circle"></span></a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/Finappza.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/vids.PNG" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-10">
-                    <h2 class="w-title">VIDS Web App</h2>
-                    <p>VIDS is a web application which contains information on the care and preservation of
-                      biodiversity. biodiversity, it has a list of some of the plant and animal species and some of the
-                      protected sites or green areas in El Salvador, showing the location of each one on the map.
-                      protected sites or green areas in El Salvador showing the location of each one on the map.</p>
-                    <div class="w-more">
-                      <span class="w-ctegory">Creation</span> / <span class="w-date">2021</span>
+          <div class="tab-pane fade" id="movil" role="tabpanel" aria-labelledby="movil-tab">
+            <div class="row justify-content-center">
+              <div class="col-md-4">
+                <div class="work-box">
+                  <a href="assets/img/FinappzaM.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                    <div class="work-img" style="height: 400px;">
+                      <img src="assets/img/FinappzaM.png" alt="" class="img-fluid">
                     </div>
-                  </div>
-                  <div class="col-sm-2">
-                    <div class="w-like">
-                      <a href="https://vids-2021.herokuapp.com/"> <span class="bi bi-plus-circle"></span></a>
+                  </a>
+                  <div class="work-content">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <h2 class="w-title">Finappza Mobile App</h2>
+                        <p>Finappza is a mobile application with information on basic financial concepts and has a loan
+                          installment calculator. a loan installment calculator, it also has a section for users who
+                          register to share information within Finappza and to share information within Finappza that
+                          can be
+                          useful to other users. users.</p>
+                        <div class="w-more">
+                          <span class="w-ctegory">Creation</span> / <span class="w-date">2020</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -522,6 +629,9 @@
   <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
