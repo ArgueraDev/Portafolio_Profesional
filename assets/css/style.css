@@ -3,6 +3,18 @@ body {
   color: #4e4e4e;
 }
 
+.TestNombre {
+  color: #ffffff;
+}
+.TestNombre :hover{
+  color: #203e5f;
+}
+.box-test{
+  padding: 5px;
+  background-color: #0000005d;
+  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.315);
+}
+
 h1,
 h2,
 h3,
